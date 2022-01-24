@@ -1,0 +1,67 @@
+body,
+html {
+	padding: 1%;
+    width: 100%;
+	height: 100%;
+}
+
+h1 {
+	color: #333;
+}
+
+.welcome {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome-icon {
+	font-size: 100px;
+}
+
+.welcome-title {
+	padding-top: 16px;
+}
+
+.welcome-text {
+
+}
+
+.contact {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-title {
+	font-size: 1.8rem;
+}
+
+.contact-list {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+
+	list-style-type: none;
+}
+
+.contact-list-item {
+	padding-left: 1.3rem;
+	padding-right: 1.3rem;
+	text-decoration: none;
+	color: #003049;
+	font-size: 1.5rem;
+}
+
+.contact-list-item:hover {
+	color: #ff556e;
+}
