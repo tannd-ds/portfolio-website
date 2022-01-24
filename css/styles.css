@@ -57,10 +57,6 @@ html {
 	padding: 0.2rem 0rem 0.2rem 1rem;
 }
 
-.nav-bar li a:hover {
-	color: var(--yellow);
-}
-
 .nav-bar div#logo {
 	font-weight: 900;
 	font-size: 2rem;
@@ -85,7 +81,7 @@ li.active-page a {
 }
 
 .welcome.quote {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight:200;
 }
 
