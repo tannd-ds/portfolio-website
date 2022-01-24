@@ -1,12 +1,78 @@
+:root {
+	--black: #232323;
+	--yellow: #FEC260;
+	--white: #F5F5F5;
+	--pink: #ff556e;
+}
 body,
 html {
-	padding: 1%;
     width: 100%;
 	height: 100%;
+	color: var(--white);
+	background-color: var(--black);
+	font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-	color: #333;
+.nav-bar {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	padding-right: 5rem;
+	padding-left: 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	color: var(--black);
+}
+
+.nav-bar ul {
+	display:flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	align-content:space-between;
+	justify-content:center;
+	align-items:center;
+}
+
+.nav-bar li {
+	float: right;
+}
+
+.nav-bar ul li a {
+	display: block;
+	text-align: center;
+	color: var(--white);
+	font-size: 1.2rem;
+}
+
+.nav-bar ul.page li a {
+	padding: 14px 16px;
+}
+.nav-bar ul.link li a {
+	padding: 0.2rem 0rem 0.2rem 1rem;
+}
+
+.nav-bar li a:hover {
+	color: var(--yellow);
+}
+
+.nav-bar div#logo {
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+.nav-bar div#logo a {
+	color: var(--yellow);
+}
+
+li.active-page a {
+	font-weight: bold;
+	color: var(--yellow);
 }
 
 .welcome {
@@ -18,50 +84,34 @@ h1 {
 	align-items: center;
 }
 
-.welcome-icon {
-	font-size: 100px;
+.welcome.quote {
+	font-size: 2rem;
+	font-weight:200;
 }
 
-.welcome-title {
-	padding-top: 16px;
+.line {
+	border: 0;
+	background-color: var(--pink);
+	height: 1.5px;
+	width: 80%;
 }
 
-.welcome-text {
-
-}
-
-.contact {
+.section .name {
 	width: 100%;
 	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects {
+	display:flex;
 	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
+
 }
 
-.contact-title {
-	font-size: 1.8rem;
-}
-
-.contact-list {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-
-	list-style-type: none;
-}
-
-.contact-list-item {
-	padding-left: 1.3rem;
-	padding-right: 1.3rem;
-	text-decoration: none;
-	color: #003049;
-	font-size: 1.5rem;
-}
-
-.contact-list-item:hover {
-	color: #ff556e;
+.projects div.title {
+	padding: 0 1.5rem;
+	font-size: 2.5rem;
+	font-weight: 100;
 }
