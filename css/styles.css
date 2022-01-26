@@ -1,5 +1,5 @@
 :root {
---black: #232323;
+	--black: #232323;
 	--yellow: #FEC260;
 	--white: #F5F5F5;
 	--pink: #ff556e;
@@ -103,6 +103,7 @@ li.active-page a {
 }
 
 .section .name {
+	padding-bottom: 1rem;
 	width: 100%;
 	display: flex;
 	flex-direction:row;
@@ -110,6 +111,7 @@ li.active-page a {
 	align-items: center;
 }
 
+/* Project Cards ---------------------------------------------------------*/
 .projects {
 	display:flex;
 	flex-direction: column;
@@ -117,7 +119,48 @@ li.active-page a {
 }
 
 .projects div.title {
-	padding: 0 1.5rem;
+	padding: 0 1.2rem;
 	font-size: 2.5rem;
 	font-weight: 100;
+}
+
+.article {
+	padding-bottom: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.article-image {
+	height: 10rem;
+}
+
+.article-image img {
+	height: 100%;
+	border-radius: 10%;
+	border: 0.2rem;
+	border-style: solid;
+	border-color: var(--yellow);
+}
+
+.article-text {
+	padding: 0 2rem;
+	width: 50rem;
+}
+
+.article-title {
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: var(--white);
+	transition: 0.3s;
+}
+.article-title:hover {
+	color: var(--pink);
+}
+
+.article-discription {
+	padding-top: 0.8rem;
+	text-align: justify;
 }
