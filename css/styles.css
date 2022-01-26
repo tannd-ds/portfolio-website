@@ -1,12 +1,12 @@
 :root {
-	--black: #232323;
+--black: #232323;
 	--yellow: #FEC260;
 	--white: #F5F5F5;
 	--pink: #ff556e;
 }
 body,
 html {
-    width: 100%;
+	width: 100%;
 	height: 100%;
 	color: var(--white);
 	background-color: var(--black);
@@ -57,6 +57,10 @@ html {
 	padding: 0.2rem 0rem 0.2rem 1rem;
 }
 
+.nav-bar ul li a:hover {
+		color: var(--yellow);
+}
+
 .nav-bar div#logo {
 	font-weight: 900;
 	font-size: 2rem;
@@ -78,6 +82,12 @@ li.active-page a {
 	align-content: center;
 	justify-content: center;
 	align-items: center;
+}
+
+.welcome.avatar img {
+	padding-bottom: 1rem;
+	width: 12.5%;
+	border-radius: 100%;
 }
 
 .welcome.quote {
