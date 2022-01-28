@@ -13,11 +13,14 @@ html {
 	font-family: 'Montserrat', sans-serif;
 }
 
+nav {
+	width: 100%;
+	position: fixed;
+	background-color: var(--black);
+}
+
 .nav-bar {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	padding-right: 5rem;
-	padding-left: 5rem;
+	padding: 1rem 5rem;
 	display: flex;
 	flex-direction: row;
 	justify-content:space-between;
@@ -84,6 +87,10 @@ li.active-page a {
 	align-items: center;
 }
 
+.welcome.avatar {
+	padding-top: 6.5rem;
+}
+
 .welcome.avatar img {
 	padding-bottom: 1rem;
 	width: 12.5%;
@@ -138,10 +145,6 @@ li.active-page a {
 
 .article-image img {
 	height: 100%;
-	border-radius: 10%;
-	border: 0.2rem;
-	border-style: solid;
-	border-color: var(--yellow);
 }
 
 .article-text {
