@@ -1,6 +1,7 @@
 // Displayed Variables
 let clickMe = document.querySelector('button');
 let randomNumberOutput = document.querySelector('h1.random')
+let numberOfPlayers;
 
 // Data-contained Variables
 let gameStarted = false;
@@ -23,25 +24,31 @@ function createArrayOfNumber(start, end) {
 	return myArray;
 }
 
-
 clickMe.addEventListener('click', () => {
 	if (!gameStarted) {
-		let numberOfPlayers = prompt("Có bao nhiêu người chơi vậy ạ?");
+		numberOfPlayers = prompt("Có bao nhiêu người chơi vậy ạ?");
 		numbersArray = createArrayOfNumber(0, numberOfPlayers-1);
 		gameStarted = true;
 
 		// Minor Display changes
+		clickMe.innerHTML = "Tiếp";
 		randomNumberOutput.innerHTML = `Chuyền Máy Cho Người Chơi Đầu Tiên`;
 	} else {
 		if (numbersArray.length === 0) {
 			console.log('No more random number');
 			console.log(players);
+			let output = "";
+			for (let i = 0; i < numberOfPlayers; i++) {
+				output += `${players[i].Name}: ${players[i].Role}<br>`
+			}
+
+			randomNumberOutput.innerHTML = output;
 			return;
 		}
 
 		randomNumberOutput.innerHTML = `Chuyền Máy Cho Người Chơi Tiếp Theo`;
 
-		let currentPlayer = prompt("Xin cái Tên đê");
+		let currentPlayer = prompt("Xin cái Tên Người Chơi đê");
 
 		let randomIndex = getRandomNumber(0, numbersArray.length - 1);
 		let randomNumber = numbersArray[randomIndex];
